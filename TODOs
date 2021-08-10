@@ -1,0 +1,15 @@
+- test teams
+- input team names
+- SHOWSTOPPER: handle synchronization of /history.txt
+- use frequency of occurrence in generating new block list after victory
+- verify setuid and setgid (vs setresuid) in shuffl
+- consider malicious padding of shellcode with non-used bytes to disable them
+
+# Probably WONTFIX
+- increase the initial set of blocked bytes from 1 to whatever fairly reliably breaks pwntools
+- consider fluffing of final shellcode with bytes to evade the random.choice
+
+# WONTFIX
+- secure /tmp and /var/tmp (chroot instead)
+- consider cross-talk between shellcodes
+- super reduce runner (maybe turn it into a tinyelf)
